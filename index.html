@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="FinalLap — the weekly online car auction event.">
+  <title>FinalLap — The Weekly Online Car Auction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="FinalLap home">Final<span>Lap</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <a href="#auctions">Auctions</a><a href="#cars">Cars</a><a href="#how-it-works">How FinalLap Works</a><a href="#about">About Us</a>
+    </nav>
+    <div class="header-actions"><a class="btn btn-dark" href="#join">Sell a Car</a><a class="login" href="#join">Login</a></div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-image">
+        <img src="assets/hero-road.jpg" alt="Two performance cars on a coastal road">
+        <div class="hero-copy">
+          <p class="eyebrow">A better way to buy and sell</p>
+          <h1>The Weekly Online<br>Car Auction Event</h1>
+          <p>Every Thursday at 1 PM ET, a curated live event brings our online car community together.</p>
+        </div>
+      </div>
+      <form class="quick-form" id="join">
+        <label class="sr-only" for="phone">Phone number</label><input id="phone" type="tel" placeholder="+1 (555) 555-0134">
+        <label class="sr-only" for="interest">I’m here to</label><select id="interest"><option>I’m here to...</option><option>Buy a car</option><option>Sell a car</option></select>
+        <button class="btn btn-red" type="submit">Text Me</button>
+      </form>
+      <p class="fine-print">We'll text you when each new drop goes live. No spam, just the cars worth seeing.</p>
+    </section>
+
+    <section class="marquee section-wrap" aria-label="Featured cars">
+      <div class="marquee-track">
+        <div class="car-chip"><span class="car-shape">▰</span><small>#1 Porsche 911</small></div>
+        <div class="car-chip"><span class="car-shape">▰</span><small>#2 Ferrari 458 Italia</small></div>
+        <div class="car-chip"><span class="car-shape">▰</span><small>#3 Porsche GT3</small></div>
+        <div class="car-chip active"><b>Current Lot</b><span class="car-shape">▰</span><small>#4 Lamborghini Murciélago</small></div>
+        <div class="car-chip"><span class="car-shape">▰</span><small>#5 Lamborghini Huracán</small></div>
+        <div class="car-chip"><span class="car-shape">▰</span><small>#6 Ferrari 360 Spider</small></div>
+        <div class="car-chip"><span class="car-shape">▰</span><small>#7 Mercedes-Benz SL</small></div>
+      </div>
+    </section>
+
+    <section class="track-story" id="auctions">
+      <img src="assets/track-banner.jpg" alt="Cars on a race track">
+      <div class="track-title"><span>The Auction Show</span><span>The Car World</span><span>Watches Together</span></div>
+    </section>
+
+    <section class="steps section-wrap" id="how-it-works">
+      <article class="step">
+        <div class="step-copy"><span class="number">01</span><h2>Browse the<br>cars all week.</h2><p>Every car gets a full listing: car photos, video, history, docs, seller Q&A. See everything you need to bid with confidence, nobody can bid yet. The bidding doesn't open until the auction.</p></div>
+        <div class="step-visual"><img src="assets/auction-screen.jpg" alt="Car listings on the FinalLap auction website"></div>
+      </article>
+      <article class="step">
+        <div class="step-copy"><span class="number">02</span><h2>Tune in Thursdays<br>at 1PM ET to bid.</h2><p>This is what makes FinalLap different. Every car goes through the auction sequence, in front of everyone at once. The whole room's attention is concentrated on a single car at a time.</p></div>
+        <div class="step-visual visual-placeholder"><span class="play-icon">▶</span><small>Live auction experience</small></div>
+      </article>
+      <article class="step">
+        <div class="step-copy"><span class="number">03</span><h2>One car at a time,<br>until they're gone.</h2><p>Bidding opens as the clock starts. A little bit spicy, no nothing gets skipped at the buzzer. When one ends, the next rolls in — a few minutes each, back to back.</p></div>
+        <div class="step-visual visual-placeholder"><span class="play-icon">↗</span><small>One room. Every car.</small></div>
+      </article>
+    </section>
+
+    <section class="team" id="about">
+      <div class="section-wrap">
+        <h2 class="section-heading">Who's behind this</h2>
+        <div class="team-grid">
+          <article class="person"><img src="assets/founder-marshall.jpg" alt="Marshall Haas"><h3>Marshall Haas</h3><p class="role">Product &amp; Marketing</p><p>Founder focused on building a better online car community, bringing great cars and great people together.</p></article>
+          <article class="person"><img src="assets/founder-hazem.jpg" alt="Hazem Gibdail"><h3>Hazem Gibdail</h3><p class="role">Marketplace Strategy</p><p>Focused on creating a thoughtful marketplace experience, bringing buyers and sellers together with clarity and confidence.</p></article>
+          <article class="person"><img src="assets/founder-courtney.jpg" alt="Courtney Guertin"><h3>Courtney Guertin</h3><p class="role">Auction Operations</p><p>Co-founder helping shape the auction experience, from the first listing to the final moments of every Thursday event.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-wrap" id="cars">
+      <h2 class="section-heading centered">Give your car<br>the entire room</h2>
+      <div class="service-grid">
+        <article class="service-card dark-card"><img src="assets/selling-car.jpg" alt="Black sports car"><div><h3>Selling one car</h3><p>Five focused minutes in the room can get your car in front of the right audience. We make selling on FinalLap easy, from prep to auction.</p><a class="btn btn-red" href="#join">Talk to us about selling</a></div></article>
+        <article class="service-card"><img src="assets/dealer-interior.jpg" alt="Luxury car interior"><div><h3>Dealers</h3><p>A shared room where makes every car you bring, plus preferred listing in our online auctions. We're choosing a small group of founding partners before launch.</p><a class="btn btn-dark" href="#join">Become a founding partner</a></div></article>
+      </div>
+      <div class="cta-banner">
+        <div><h2>Thursdays at 1 PM ET.<br>Don't miss it.</h2><p>Get a text when the next auction is about to go live.</p><form class="quick-form cta-form"><input type="tel" aria-label="Phone number" placeholder="+1 (555) 555-0134"><select aria-label="I’m here to"><option>I'm here to...</option><option>Buy a car</option><option>Sell a car</option></select><button class="btn btn-dark" type="submit">Text Me</button></form></div>
+        <img src="assets/track-banner.jpg" alt="" aria-hidden="true">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer-logo" href="#home">FinalLap</a>
+    <nav><a href="#auctions">Auctions</a><a href="#cars">Cars</a><a href="#how-it-works">How FinalLap Works</a><a href="#about">About Us</a><a href="#join">Sell a Car</a></nav>
+    <p>© 2025 FinalLap, Inc. All rights reserved.</p>
+  </footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
